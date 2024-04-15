@@ -38,11 +38,13 @@ const BookList = () => {
 
   return (
     <>
-      <EditBookModal
-        open={editModalOpen}
-        onClose={handleCloseEditModal}
-        book={selectedBook}
-      />
+      {selectedBook && (
+        <EditBookModal
+          open={editModalOpen}
+          onClose={handleCloseEditModal}
+          book={selectedBook}
+        />
+      )}
       <TableContainer component={Paper}>
         <Table>
           <TableHead>

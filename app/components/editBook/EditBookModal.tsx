@@ -10,7 +10,7 @@ interface EditBookModalProps {
 }
 
 const EditBookModal: React.FC<EditBookModalProps> = ({ open, onClose, book }) => {
-  const handleSubmit = () => {
+  const handleSubmit = (updatedData: BookType) => {
     onClose(); 
   };
 
