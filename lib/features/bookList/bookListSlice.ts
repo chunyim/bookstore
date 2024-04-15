@@ -7,7 +7,20 @@ export interface BookListState {
 }
 
 const initialState: BookListState = {
-  books: [],
+  books: [    {
+    id: "1",
+    name: "A Theory of Justice",
+    price: 15.99,
+    category: "Philosophy",
+    description: "A work of political philosophy by John Rawls...",
+  },
+  {
+    id: "2",
+    name: "Anarchy, State, and Utopia",
+    price: 14.99,
+    category: "Philosophy",
+    description: "A book by the American political philosopher Robert Nozick...",
+  },],
 };
 
 export const bookListSlice = createSlice({
